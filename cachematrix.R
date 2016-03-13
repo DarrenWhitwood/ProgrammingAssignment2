@@ -37,4 +37,5 @@ cacheSolve <- function(x, ...) {
 invertibleMatrix <- matrix(c(1,2,3,4),2,2)
 inverseMatrixCache <- makeCacheMatrix(invertibleMatrix)
 matrixInverse <- cacheSolve(inverseMatrixCache)
+cacheSolve(inverseMatrixCache)
 invertibleMatrix %*% matrixInverse
